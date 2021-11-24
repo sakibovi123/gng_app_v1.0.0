@@ -1,15 +1,15 @@
 class CategoryModel {
   int id;
   String title;
-  String image;
+  String img;
   String date;
 
-  CategoryModel({this.id, this.title, this.image, this.date});
+  CategoryModel({this.id, this.title, this.img, this.date});
 
   CategoryModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
-    image = json['image'];
+    img = json['img'];
     date = json['date'];
   }
 
@@ -17,7 +17,7 @@ class CategoryModel {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['id'] = this.id;
     data['title'] = this.title;
-    data['image'] = this.image;
+    data['img'] = this.img;
     data['date'] = this.date;
     return data;
   }

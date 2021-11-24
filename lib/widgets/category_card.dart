@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class CategoryCard extends StatelessWidget {
   final int id;
   final String title;
-  final String image;
+  final String img;
 
-  CategoryCard({Key key, this.id, this.title, this.image}) : super(key: key);
+  CategoryCard({Key key, this.id, this.title, this.img}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +31,9 @@ class CategoryCard extends StatelessWidget {
               Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Image.network(
-                    "https://i.ytimg.com/vi/2QvOxa_7wEw/maxresdefault.jpg",
+                    "https://sdp4.pythonanywhere.com$img",
                     fit: BoxFit.cover,
-                    height: 50,
+                    height: 62,
                   )),
               Row(
                 children: [

@@ -180,7 +180,11 @@ class _HomeScreensState extends State<HomeScreens> {
                   crossAxisCount: 1,
                   scrollDirection: Axis.horizontal,
                   children: List.generate(cats.length, (i) {
-                    return CategoryCard(id: cats[i].id, title: cats[i].title);
+                    return CategoryCard(
+                      id: cats[i].id,
+                      title: cats[i].title,
+                      img: cats[i].img,
+                    );
                   })
                   // scrollDirection: Axis.horizontal,
                   // List.generate(, (index) => null)
